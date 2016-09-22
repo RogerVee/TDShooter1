@@ -11,6 +11,7 @@
     <sound>sound\snd_hit</sound>
     <sound>sound\snd_laser_hit</sound>
     <sound>sound\snd_repair</sound>
+    <sound>sound\snd_coin</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_player_ship_sheild</sprite>
@@ -24,6 +25,7 @@
     <sprite>sprites\sprite20</sprite>
     <sprite>sprites\spr_loot</sprite>
     <sprite>sprites\spr_repair</sprite>
+    <sprite>sprites\spr_coin</sprite>
     <sprite>sprites\img_blast</sprite>
     <sprite>sprites\spr_hit</sprite>
     <sprite>sprites\spr_ablty_icon</sprite>
@@ -110,6 +112,7 @@
     </objects>
     <objects name="items">
       <object>objects\obj_repair</object>
+      <object>objects\obj_currency</object>
       <object>objects\obj_loot</object>
       <object>objects\obj_life</object>
     </objects>

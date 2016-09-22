@@ -91,6 +91,12 @@ if (hp &lt;= 0){
       {
       instance_create(x,y,obj_repair);
       }
+  //Coin
+    if (rand &gt;2)|| (rand &lt;4)
+      {
+      coin = instance_create(x,y,obj_currency);
+      coin.value = rand
+      }
   //life
       if global.life &lt; 3 &amp;&amp; (global.spawn_count &gt;40 &amp;&amp; global.spawn_count &lt;51) &amp;&amp; rand &lt; 1
     {

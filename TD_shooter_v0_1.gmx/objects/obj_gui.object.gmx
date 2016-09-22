@@ -105,7 +105,7 @@ draw_healthbar(50,(room_height - 50),250,(room_height -30),global.hp*10,c_black,
 draw_set_colour(c_white);
 draw_set_font (font0);
 draw_text(32,32,"Score  " + string(global.points));
-//draw_text(32,64,"lives  " + string(global.life));
+draw_text(32,64,"Coin  " + string(global.currency));
 draw_text(50,(room_height - 75),"E" + string(global.energy));
 //draw_text(32,256,"spawn count " + string(global.spawn_count));
 

@@ -423,45 +423,6 @@ draw_set_colour(c_lime);
         </arguments>
       </action>
     </event>
-    <event eventtype="5" enumb="32">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>alrtime = 120;
-if (global.ablt1 = 3) alrtime = 15;
-
-
-if (alarm[0] = -1) alarm = 5;
-
-if (global.ablt1 =0||3)
-{
-if (alarm[1] = -1) 
-{
-alarm[1] = alrtime;
-rocket1 = instance_create(x-64,y,obj_rocket);
-rocket3 = instance_create(x+64,y,obj_rocket);
-}
-//difering to alarm 1 for timing 
-}
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="5" enumb="16">
       <action>
         <libid>1</libid>
@@ -514,6 +475,82 @@ global.energy = (global.energy - 0.5);
 global.ablt1 +=1;
 if global.ablt1 &gt;4 global.ablt1 = 0
 
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="54">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/*dir = point_direction(x,y,mouse_x,mouse_y)
+    xx = x
+    yy = y
+    scr_laser(500,5,c_green)
+    */
+    
+if global.energy &gt;= 20
+{global.energy = global.energy - 20;
+blade1 = instance_create((x -64),y-32,obj_beam);
+blade2 = instance_create((x +64),y-32,obj_beam);
+//blade1.direction = 100;
+//blade2.direction = 80;
+}
+
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="50">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>alrtime = 120;
+if (global.ablt1 = 3) alrtime = 15;
+
+
+if (alarm[0] = -1) alarm = 5;
+
+if (global.ablt1 =0||3)
+{
+if (alarm[1] = -1) 
+{
+alarm[1] = alrtime;
+rocket1 = instance_create(x-64,y,obj_rocket);
+rocket3 = instance_create(x+64,y,obj_rocket);
+}
+//difering to alarm 1 for timing 
+}
 
 </string>
           </argument>
@@ -582,43 +619,6 @@ draw_set_colour(c_lime);
             
     global.energy = global.energy -25;
     }
-
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="9" enumb="69">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/*dir = point_direction(x,y,mouse_x,mouse_y)
-    xx = x
-    yy = y
-    scr_laser(500,5,c_green)
-    */
-    
-if global.energy &gt;= 20
-{global.energy = global.energy - 20;
-blade1 = instance_create((x -64),y-32,obj_beam);
-blade2 = instance_create((x +64),y-32,obj_beam);
-//blade1.direction = 100;
-//blade2.direction = 80;
-}
 
 
 </string>
